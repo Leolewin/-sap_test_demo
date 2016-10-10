@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta  http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>hello world</title>
+</head>
+<script type="text/javascript" id="sap-ui-bootstrap" src = "resources/sap-ui-core.js"
+	data-sap-ui-theme = "sap_belize"
+	data-sap-ui-libs = "sap.m"
+	data-sap-ui-compactVersion = "edge"
+	data-sap-ui-preload = "async"
+></script>
+<body class="sapUiBody" id="content">
+<!-- <div id="content"></div> -->
+
+</body>
+<script type="text/javascript">
+	sap.ui.getCore().attachInit(function(){
+		// jQuery("#content").html("hello world - UI5 is Ready!");
+		var app = new sap.m.App("myApp", {
+			initialPage : "page1"
+		});
+
+		var page1 = new sap.m.Page("page1", {
+			title:"hello world",
+			shownavButton : false,
+			content: new sap.m.Button({
+				text: "go to page2",
+				press: function(){
+					app.to("page2");
+				}
+			})
+		});
+
+		var page2 = new sap.m.Page("page2", {
+			title:"hello page2",
+			showNavButton:true,
+			navButtonPress:function(){
+				app.back();	
+			}
+		});		
+
+		app.addPage(page1).addPage(page2);
+		app.placeAt("content");
+	});
+</script>
+</html>
