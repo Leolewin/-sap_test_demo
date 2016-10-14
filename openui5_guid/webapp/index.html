@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta  http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>hello world</title>
+	<script type="text/javascript" id="sap-ui-bootstrap" src = "resources/sap-ui-core.js"
+		data-sap-ui-theme = "sap_belize"
+		data-sap-ui-libs = "sap.m"
+		data-sap-ui-compactVersion = "edge"
+		data-sap-ui-preload = "async"
+		data-sap-ui-resourceroots = '{
+			"sap.ui.demo.wt" : "./"
+			}'>
+	</script>
+	<script type="text/javascript">
+		sap.ui.getCore().attachInit(function(){
+			sap.ui.xmlview({
+				viewName: "sap.ui.demo.wt.view.App"
+			}).placeAt("content");
+		});
+	</script>
+</head>
+
+<body class="sapUiBody" id="content">
+<!-- <div id="content"></div> -->
+
+</body>
+
+</html>
