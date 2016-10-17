@@ -12,7 +12,7 @@ sap.ui.define([
 			init : function(){
 				UIComponent.prototype.init.apply(this, arguments);
 				var oData = {recipient:{
-					name : "World"
+					name : "Leon!"
 					}
 				};
 				var oModel = new JSONModel(oData);
