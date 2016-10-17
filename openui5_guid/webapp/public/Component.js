@@ -22,7 +22,7 @@ sap.ui.define([
 				this.helloDialog = new HelloDialog();
 			},
 			exit : function () {
-				this.helloDialog.destory();
+				this.helloDialog.destroy();
 			}
 
 		});

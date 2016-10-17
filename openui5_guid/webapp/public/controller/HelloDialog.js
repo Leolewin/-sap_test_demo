@@ -12,7 +12,7 @@ sap.ui.define([
                 oView.addDependent(this._oDialog);
                 oView.attachBeforeExit(function () {
                     oView.removeDependent(this._oDialog);
-                }).bind(this);
+                }.bind(this));
             }
             return this._oDialog;
         },
