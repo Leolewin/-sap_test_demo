@@ -8,7 +8,7 @@
          width="auto">
       <content>
           <Button text = "{i18n>openDialogButtonText}" press = "onOpenDialog"
-                  class = "sapUiSmallMarginEnd"/>
+                  class = "sapUiSmallMarginEnd" icon = "sap-icon://world"/>
           <Button text="{i18n>showHelloButtonText}" press="onShowHello"
                   class="myCustomButton sapUiSmallMarginEnd"/>
           <Input value="{/recipient/name}"
